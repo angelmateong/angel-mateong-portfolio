@@ -1,0 +1,177 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Angel Mateong — Bookkeeper</title>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+  <!-- Calendly popup script -->
+  <script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript" async></script>
+</head>
+<body>
+  <header class="site-header">
+    <nav class="nav container">
+      <a class="brand" href="#" id="brandName">Angel Mateong</a>
+      <ul class="nav-links">
+        <li><a href="#how">How I Help</a></li>
+        <li><a href="#workflow">Workflow</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <a class="cta" id="bookBtn" href="#contact">Get a Free Consultation</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero container" id="home">
+      <div class="hero-left">
+        <h1 id="heroName">Bookkeeping that makes your revenue accurate and your decisions clearer</h1>
+        <p id="heroSummary">I help small businesses and hospitality/retail operations eliminate revenue discrepancies, prepare audit-ready schedules, and turn bookkeeping into actionable insights.</p>
+        <div class="hero-ctas">
+          <a class="btn primary" href="#contact">Book a Free Consult</a>
+          <a class="btn ghost" id="downloadResume" href="#" download="Angel_Mateong_Resume.pdf">Download Resume</a>
+        </div>
+        <ul class="quick-list" id="quickBenefits">
+          <li>Revenue reconciliation & variance resolution</li>
+          <li>Audit-ready schedules & month-end close</li>
+          <li>Automation with QuickBooks / NetSuite / POS</li>
+        </ul>
+      </div>
+      <div class="hero-right">
+        <svg width="360" height="360" viewBox="0 0 360 360" aria-hidden="true">
+          <defs>
+            <linearGradient id="g" x1="0" x2="1">
+              <stop offset="0" stop-color="#0d6efd"/>
+              <stop offset="1" stop-color="#0a58ca"/>
+            </linearGradient>
+          </defs>
+          <rect width="360" height="360" rx="24" fill="url(#g)" opacity="0.06"></rect>
+          <g transform="translate(40,40)" fill="none" stroke="#0d6efd" stroke-opacity="0.18">
+            <circle cx="100" cy="100" r="80"></circle>
+            <path d="M30 160 L180 30" stroke-width="2"></path>
+          </g>
+        </svg>
+      </div>
+    </section>
+
+    <section id="how" class="how container">
+      <h2>How I can help</h2>
+      <p class="lead">Practical bookkeeping services focused on accurate revenue, strong controls, and clear, timely reports so you can run the business — not the books.</p>
+      <div class="cards" id="helpCards">
+        <article class="card">
+          <h3>Revenue Reconciliation & Variance Resolution</h3>
+          <p>Identify and resolve discrepancies across POS, bank deposits and channel sales to ensure revenue is complete and accurate.</p>
+        </article>
+        <article class="card">
+          <h3>Audit-Ready Schedules & Month-End Close</h3>
+          <p>Prepare clean journal entries, deposit reconciliations, and month-end adjustments so your records are ready for internal and external review.</p>
+        </article>
+        <article class="card">
+          <h3>Process Controls & Collaboration</h3>
+          <p>Strengthen controls between operations and finance to reduce errors, improve cash handling and speed up reconciliations.</p>
+        </article>
+        <article class="card">
+          <h3>Actionable Reporting & Data Insights</h3>
+          <p>Deliver plain-language P&L, balance sheet and simple KPIs that highlight cashflow, discrepancies and opportunities.</p>
+        </article>
+      </div>
+
+      <div class="deliverables container">
+        <h4>Typical deliverables</h4>
+        <ul id="deliverablesList">
+          <li>Daily / monthly revenue reconciliation reports and variance notes</li>
+          <li>Audit-ready schedules and deposit reconciliation workpapers</li>
+          <li>Corrected journal entries and month-end close support</li>
+          <li>Simple dashboards and cashflow snapshots with practical next steps</li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="workflow" class="workflow container">
+      <h2>Financial Workflow — Interactive</h2>
+      <p class="lead">A modern workflow I implement so your bookkeeping is accurate, efficient and useful.</p>
+      <div class="workflow-grid">
+        <div class="step" data-step="1">
+          <div class="step-icon">1</div>
+          <h4>Capture</h4>
+          <p>Import POS and bank transactions, collect deposit slips and receipts for a single source of truth.</p>
+        </div>
+        <div class="step" data-step="2">
+          <div class="step-icon">2</div>
+          <h4>Reconcile</h4>
+          <p>Match POS and bank deposits, investigate variances and apply corrective entries where necessary.</p>
+        </div>
+        <div class="step" data-step="3">
+          <div class="step-icon">3</div>
+          <h4>Prepare</h4>
+          <p>Create audit-ready schedules, post journal entries, and tidy the ledger for month-end close.</p>
+        </div>
+        <div class="step" data-step="4">
+          <div class="step-icon">4</div>
+          <h4>Report & Advise</h4>
+          <p>Deliver clear reports and recommendations that prioritize cashflow and operational improvements.</p>
+        </div>
+      </div>
+      <div id="workflow-detail" class="workflow-detail">
+        <h3 id="workflow-title">Hover a step to see details</h3>
+        <p id="workflow-text">Interactive details appear here with tips and typical deliverables.</p>
+      </div>
+    </section>
+
+    <section id="skills" class="skills container">
+      <h2>Skills & Tools</h2>
+      <div class="skill-list" id="skillList">
+        <!-- populated by script -->
+      </div>
+      <div class="certs" style="margin-top:14px;color:#374151">
+        <strong>Certifications:</strong> Certified International Bookkeeper (MICB), Certified QuickBooks ProAdvisor, Google Data Analytics - Foundations
+      </div>
+    </section>
+
+    <section id="contact" class="contact container">
+      <h2>Let's talk</h2>
+      <p>Schedule a free 20-minute discovery call or send me a message — whichever you prefer.</p>
+
+      <!-- Netlify form (ready for Netlify deployment). Keep 'name' consistent. -->
+      <form id="contactForm" name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field" class="contact-form">
+        <input type="hidden" name="form-name" value="contact" />
+        <p style="display:none">
+          <label>Don’t fill this out if you're human: <input name="bot-field" /></label>
+        </p>
+
+        <div class="row">
+          <input type="text" name="name" id="contactName" placeholder="Your name" required>
+          <input type="email" name="email" id="contactEmail" placeholder="your@email.com" required>
+        </div>
+        <input type="text" name="company" id="contactCompany" placeholder="Company (optional)">
+        <textarea name="message" id="contactMessage" placeholder="How can I help?" required></textarea>
+        <div class="form-actions">
+          <button type="submit" class="btn primary">Send message</button>
+          <!-- Popup widget trigger -->
+          <a class="btn ghost" id="scheduleBtn" href="#" aria-haspopup="dialog">Schedule a call</a>
+        </div>
+        <p id="formStatus" class="form-status" aria-live="polite"></p>
+      </form>
+
+      <div class="contact-info" id="contactInfo" style="margin-top:18px">
+        <!-- Populated by script -->
+      </div>
+
+      <div style="margin-top:8px">
+        <a href="https://www.linkedin.com/in/angel-mateong-6b6070232" target="_blank" rel="noopener" class="btn ghost">View LinkedIn</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p id="footerName">© <span id="year"></span> — Bookkeeping & Financial Workflow</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
